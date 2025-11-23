@@ -63,9 +63,7 @@ Peak Defect Period: Week 32
 Python (Pandas, PyODBC)
 SQL Server
 Power BI
+DAX
+JIRA (CSV/JSON export)
 
 ###### LIPSA PATTANAIK | ITER SOA UNIVERSITY
-
-DAX
-
-JIRA (CSV/JSON export)
