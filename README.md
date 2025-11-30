@@ -14,7 +14,7 @@ Interactive Power BI dashboards
 DAX measures for actionable QA insights
 Supports STLC defect analysis for QA teams
 
-### Project Structure
+## Project Structure
 /Intelligent-Defect-Analytics
 │
 ├── jira_parser.py          # Parses JIRA CSV/JSON files and normalizes lifecycle data
@@ -24,17 +24,17 @@ Supports STLC defect analysis for QA teams
 ├── requirements.txt        # Python package dependencies
 └── README.md               # Main documentation
 
-#### How It Works
+## How It Works
 # 1. JIRA Export Parsing
 Reads JIRA CSV or JSON
 Extracts defect fields
 Normalizes timestamps and statuses
 Computes lifecycle metrics (TTR, open/closed)
-## 2. ETL Pipeline (Python → SQL Server)
+# 2. ETL Pipeline (Python → SQL Server)
 Loads cleaned CSV
 UPSERT logic maintains unique defect entries
 Supports Windows Auth or SQL Auth
-### 3. Power BI Dashboard
+# 3. Power BI Dashboard
 Visualizes:
 Defects by priority
 Defects opened vs closed trend
@@ -43,7 +43,7 @@ SLA breaches
 Team workload
 Component-wise defect distribution
 
-##### Setup Instructions
+## Setup Instructions
 Install dependencies
 pip install -r requirements.txt
 Parse JIRA export
@@ -53,17 +53,17 @@ python etl_load_to_sql.py --csv clean_defects.csv --server YOUR_SERVER --databas
 Build Power BI Dashboard
 Open powerbi_README.md for visuals & DAX formulas.
 
-###### Example Metrics
+## Example Metrics
 Average Resolution Time: 2.9 days
 SLA Breach Rate: 14.7%
 Most Frequent Issue Type: Bug
 Peak Defect Period: Week 32
 
-###### Technologies Used
+## Technologies Used
 Python (Pandas, PyODBC)
 SQL Server
 Power BI
 DAX
 JIRA (CSV/JSON export)
 
-###### LIPSA PATTANAIK | ITER SOA UNIVERSITY
+# LIPSA PATTANAIK | ITER SOA UNIVERSITY
